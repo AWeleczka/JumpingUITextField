@@ -10,8 +10,7 @@ env:
     - IOS_SDK=iphonesimulator12.1
   matrix:
     - DESTINATION="platform=iOS Simulator,OS=12.1,name=iPhone 6" TARGET="JumpingUITextField" SDK="$IOS_SDK" RUN_TESTS="build"
-    - DESTINATION="platform=iOS Simulator,OS=12.1,name=iPhone 6" TARGET="JumpingUITextFieldDemo" SDK="$IOS_SDK" RUN_TESTS="build"
-    - DESTINATION="platform=iOS Simulator,OS=12.1,name=iPhone 6" TARGET="JumpingUITextFieldDemo" SDK="$IOS_SDK" RUN_TESTS="test"
+    - DESTINATION="platform=iOS Simulator,OS=12.1,name=iPhone 6" TARGET="LocalizedJumpingUITextField" SDK="$IOS_SDK" RUN_TESTS="build"
 before_install:
   - gem install xcpretty --no-rdoc --no-ri --no-document --quiet
 script:
