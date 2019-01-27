@@ -1,9 +1,9 @@
 Pod::Spec.new do |s|
   s.name = 'JumpingUITextField'
   s.version = '0.0.1'
-  s.summary = 'An easy drop in to allow your user to advance to the next UITextField in a group by using the return-key'
+  s.summary = 'Extension for UITextField written in swift 4.2'
   s.description = <<-DESC
-                  An easy drop in to allow your user to advance to the next UITextField in a group by using the return-key
+                  Adding the ability to jump between UITextFields withing groups by using the return-key on the soft-keyboard
                   DESC
   s.homepage = 'https://github.com/AWeleczka/JumpingUITextField'
   s.license = { :type => 'MIT', :file => 'LICENSE' }
