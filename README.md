@@ -21,7 +21,7 @@ You can add this repository as a submodule to your git-repository by executing t
 
 # Status
 [![Build Status](https://travis-ci.org/AWeleczka/JumpingUITextField.svg?branch=master)](https://travis-ci.org/AWeleczka/JumpingUITextField)
-[![Maintainability](https://api.codeclimate.com/v1/badges/JumpingUITextField/maintainability)](https://codeclimate.com/github/AWeleczka/JumpingUITextField/maintainability)
+[![Maintainability](https://api.codeclimate.com/v1/badges/15ab283a6cdf3ef97c78/maintainability)](https://codeclimate.com/github/AWeleczka/JumpingUITextField/maintainability)
 [![codecov](https://codecov.io/gh/AWeleczka/JumpingUITextField/branch/master/graph/badge.svg)](https://codecov.io/gh/AWeleczka/JumpingUITextField)
 
 # Free things are nice
