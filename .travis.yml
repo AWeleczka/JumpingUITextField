@@ -1,6 +1,7 @@
 language: swift
 osx_image: xcode10.1
 
+podfile: JumpingUITextField/
 env:
   global:
     - LANG=en_US.UTF-8
