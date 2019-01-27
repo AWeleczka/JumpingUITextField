@@ -18,7 +18,7 @@ script:
   - set -o pipefail
   - xcodebuild -version
   - xcodebuild -showsdks
-  - xcodebuild -list -project "$WORKSPACE"
+  - xcodebuild -list -workspace "$WORKSPACE"
   - travis_retry xcodebuild -workspace "$WORKSPACE" -scheme "$TARGET" -sdk "$SDK" -destination "$DESTINATION" -configuration Debug ONLY_ACTIVE_ARCH=NO $RUN_TESTS | xcpretty -c;
 after_script:
   - bash <(curl -s https://codecov.io/bash) -J 'JumpingUITextFieldTests'
