@@ -1,0 +1,25 @@
+language: swift
+osx_image: xcode10.1
+
+env:
+  global:
+    - LANG=en_US.UTF-8
+    - LC_ALL=en_US.UTF-8
+    - WORKSPACE="JumpingUITextField/JumpingUITextField.xcodeproj"
+    - IOS_FRAMEWORK_SCHEME="JumpingUITextField/JumpingUITextField"
+    - IOS_SDK=iphonesimulator12.1
+  matrix:
+    - DESTINATION="platform=iOS Simulator,OS=12.1,name=iPhone 6" TARGET="JumpingUITextField" SDK="$IOS_SDK" RUN_TESTS="build"
+    - DESTINATION="platform=iOS Simulator,OS=12.1,name=iPhone 6" TARGET="LocalizedJumpingUITextField" SDK="$IOS_SDK" RUN_TESTS="build"
+before_install:
+  - gem install xcpretty --no-rdoc --no-ri --no-document --quiet
+script:
+  - set -o pipefail
+  - xcodebuild -version
+  - xcodebuild -showsdks
+  - xcodebuild -list -project "$WORKSPACE"
+  - travis_retry xcodebuild -project "$WORKSPACE" -scheme "$TARGET" -sdk "$SDK" -destination "$DESTINATION" -configuration Debug ONLY_ACTIVE_ARCH=NO $RUN_TESTS | xcpretty -c;
+after_script:
+  - bash <(curl -s https://codecov.io/bash) -J 'JumpingUITextFieldTests'
+notifications:
+  email: true
