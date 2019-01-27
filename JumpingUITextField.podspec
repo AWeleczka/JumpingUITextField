@@ -13,4 +13,9 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '8.0'
   s.source_files = 'JumpingUITextField/JumpingUITextField/**/*'
   s.exclude_files = 'JumpingUITextField/JumpingUITextField/*.plist'
+  s.subspec 'Localized' do |ss|
+    ss.source_files = 'JumpingUITextField/LocalizedJumpingUITextField/**/*'
+    ss.exclude_files = 'JumpingUITextField/LocalizedJumpingUITextField/*.plist'
+    ss.dependency 'LocalizableUIElements', '~> 0.1.0'
+  end
 end

@@ -1,0 +1,6 @@
+framework module Pods_JumpingUITextField {
+  umbrella header "Pods-JumpingUITextField-umbrella.h"
+
+  export *
+  module * { export * }
+}
