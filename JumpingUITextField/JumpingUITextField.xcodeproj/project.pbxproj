@@ -143,6 +143,8 @@
 				0508059021FCB30800DB7A05 /* Sources */,
 				0508059121FCB30800DB7A05 /* Frameworks */,
 				0508059221FCB30800DB7A05 /* Resources */,
+				0560EFDF21FE49E8009F0011 /* swiftformat */,
+				0560EFE221FE4A5B009F0011 /* swiftlint */,
 			);
 			buildRules = (
 			);
@@ -162,6 +164,8 @@
 				05D5352721FE116D005C6756 /* Sources */,
 				05D5352821FE116D005C6756 /* Frameworks */,
 				05D5352921FE116D005C6756 /* Resources */,
+				0560EFE021FE4A37009F0011 /* swiftformat */,
+				0560EFE121FE4A4D009F0011 /* swiftlint */,
 			);
 			buildRules = (
 			);
@@ -227,6 +231,78 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0560EFDF21FE49E8009F0011 /* swiftformat */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = swiftformat;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftformat >/dev/null; then\nswiftformat ${SRCROOT}/ --header \"//\\n//  JumpingUITextField - https://github.com/AWeleczka/JumpingUITextField\\n//  Extension for UITextField written in swift 4.2\\n//\\n//  Readme:        https://github.com/AWeleczka/JumpingUITextField/blob/master/README.md\\n//  Changelog:     https://github.com/AWeleczka/JumpingUITextField/blob/master/CHANGELOG.md\\n//  CocoaPod:      https://cocoapods.org/pods/JumpingUITextField\\n//  License (MIT): https://github.com/AWeleczka/JumpingUITextField/blob/master/LICENSE\\n//\\n//  Copyright (c) {year} Alexander Weleczka - https://AWeleczka.de/\\n//\" --indent 2 --self insert\nelse\necho \"warning: SwiftFormat not installed, download from https://github.com/nicklockwood/SwiftFormat\"\nfi\n";
+		};
+		0560EFE021FE4A37009F0011 /* swiftformat */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = swiftformat;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftformat >/dev/null; then\nswiftformat ${SRCROOT}/ --header \"//\\n//  JumpingUITextField - https://github.com/AWeleczka/JumpingUITextField\\n//  Extension for UITextField written in swift 4.2\\n//\\n//  Readme:        https://github.com/AWeleczka/JumpingUITextField/blob/master/README.md\\n//  Changelog:     https://github.com/AWeleczka/JumpingUITextField/blob/master/CHANGELOG.md\\n//  CocoaPod:      https://cocoapods.org/pods/JumpingUITextField\\n//  License (MIT): https://github.com/AWeleczka/JumpingUITextField/blob/master/LICENSE\\n//\\n//  Copyright (c) {year} Alexander Weleczka - https://AWeleczka.de/\\n//\" --indent 2 --self insert\nelse\necho \"warning: SwiftFormat not installed, download from https://github.com/nicklockwood/SwiftFormat\"\nfi\n";
+		};
+		0560EFE121FE4A4D009F0011 /* swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = swiftlint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		0560EFE221FE4A5B009F0011 /* swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = swiftlint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
 		90EE915102D556809CFB08F5 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

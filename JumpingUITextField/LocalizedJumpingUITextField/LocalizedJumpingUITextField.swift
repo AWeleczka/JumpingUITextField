@@ -1,12 +1,17 @@
 //
-//  Showyou Generic UI - https://showyou.info/
-//  The interactive productcatalogue
+//  JumpingUITextField - https://github.com/AWeleczka/JumpingUITextField
+//  Extension for UITextField written in swift 4.2
 //
-//  Copyright (c) 2019 schoko pro GmbH, Wiesbaden
+//  Readme:        https://github.com/AWeleczka/JumpingUITextField/blob/master/README.md
+//  Changelog:     https://github.com/AWeleczka/JumpingUITextField/blob/master/CHANGELOG.md
+//  CocoaPod:      https://cocoapods.org/pods/JumpingUITextField
+//  License (MIT): https://github.com/AWeleczka/JumpingUITextField/blob/master/LICENSE
+//
+//  Copyright (c) 2019 Alexander Weleczka - https://AWeleczka.de/
 //
 
-import UIKit
 import LocalizableUIElements
+import UIKit
 
 @IBDesignable public class LocalizedJumpingUITextField: LocalizedUITextField {
   @IBInspectable var group: String = ""
