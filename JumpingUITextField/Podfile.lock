@@ -1,16 +1,16 @@
 PODS:
-  - LocalizableUIElements (0.1.5)
+  - LocalizableUIElements (1.0.0)
 
 DEPENDENCIES:
-  - LocalizableUIElements (~> 0.1.0)
+  - LocalizableUIElements (~> 1.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - LocalizableUIElements
 
 SPEC CHECKSUMS:
-  LocalizableUIElements: e752042ab5a33f46a76403a32742a128aba2c873
+  LocalizableUIElements: 6f9d2c8bd02506fd178cd0c55e6faecaa689a1a9
 
-PODFILE CHECKSUM: d28392db5ee9fb4f66f9672515d4217912afdcaa
+PODFILE CHECKSUM: 3ab285d0ec14abb4954f54ce99ebc8434e48ade8
 
 COCOAPODS: 1.5.3

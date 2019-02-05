@@ -1,5 +1,9 @@
-# LocalizableUIElements
-A set of UIKit-Elements with easy localization in code and storyboard.
+# Localizable UIElements for Swift written in 4.2
+A set of various UIKit elements with added localization-support.  
+Using the on-board methods of NSLocalizedString without the need for special additions to your project.
+Adding storyboard IBDesignable objects for localization straight from the storyboard as well as in-code methods.
+
+*Released in 1.0 on Feburary 2nd 2019*
 
 ---
 
