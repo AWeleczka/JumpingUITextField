@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'JumpingUITextField'
-  s.version = '0.1.0'
+  s.version = '0.2.0'
   s.summary = 'Extension for UITextField written in swift 4.2'
   s.description = <<-DESC
                   Adding the ability to jump between UITextFields withing groups by using the return-key on the soft-keyboard
@@ -16,6 +16,6 @@ Pod::Spec.new do |s|
   s.subspec 'Localized' do |ss|
     ss.source_files = 'JumpingUITextField/LocalizedJumpingUITextField/**/*'
     ss.exclude_files = 'JumpingUITextField/LocalizedJumpingUITextField/*.plist'
-    ss.dependency 'LocalizableUIElements', '~> 0.1.0'
+    ss.dependency 'LocalizableUIElements', '~> 1.0'
   end
 end
