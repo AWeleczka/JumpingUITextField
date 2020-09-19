@@ -3,6 +3,11 @@ An easy drop in to allow your user to advance to the next UITextField in a group
 
 ---
 
+### Note
+I do not have access to a mac any longer, therefore  development on this project is on ice from my side.
+
+---
+
 # Installation
 ## Using CocoaPods
 [![Platform Badge](https://cocoapod-badges.herokuapp.com/p/JumpingUITextField/badge.svg)](https://cocoapods.org/pods/JumpingUITextField)
